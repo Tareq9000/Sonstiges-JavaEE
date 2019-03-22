@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+	<form class="form">
+		<script>
+
+			//Aufgabe 1 Gerade & Ungerade Zahlen eingeben
+			document.write("<h1>gerade Zahlen</h1>");
+			for(i = 1; i <= 20; i++){
+				if(i%2 == 0){
+					document.write(i);
+				}
+			}
+			document.write("<h1>ungerade Zahlen</h1>");
+			for(i = 0; i <= 31; i++){
+				if(i%2 == 1){
+					document.write(i);
+				}
+			}
+			document.write("<br><p><p>");
+			//Aufgabe 2 Variabeln
+			var var1 = 13;
+			var var2 = 23.15;
+			var var3 = "ergibt";
+			document.write(var1 +" + "+ var2 +" "+var3+" "+ 36.15 + "<br>");
+			
+			// Aufgabe 3 Zeichenketten
+			var var4 = var1 +" + "+ var2 + var3 + 36.15 
+			document.write("Die Länge beträgt "+var4.length + "<br>");
+			
+			//Aufgabe 4 Arrays
+			var array = ["Ein ", "Array ", "speichert ", "zahlreiche ", "Elemente "];
+			for(i = 0; i < array.length; i++){	
+				document.write(array[i]);
+			}
+		
+		</script>
+	</form>
+
+</body>
+</html>

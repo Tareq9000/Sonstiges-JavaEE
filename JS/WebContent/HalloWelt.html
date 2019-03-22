@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hallo Welt</title>
+<script> window.alert('Hallo Welt');</script>
+<script>
+function myFunction(var x,var y) {
+  if (y === undefined) {
+    y = 0;
+    
+  } 
+  return 4;
+} 
+</script>
+
+
+</head>
+<body onLoad="myFunktion(3,5)">
+	
+	<script>document.write('Tschau Welt')</script>
+	<button onClick="myFunction(4, 3)">klick mich nicht</button>
+	<p id = 'hallo'></p>
+	<script>
+	document.getElementById('hallo').innerHTML='Hallo Welt';
+	</script>
+</body>
+</html>

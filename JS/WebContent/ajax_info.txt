@@ -1,0 +1,2 @@
+<h1>The XMLHttpRequest Object</h1>
+Der Knopf wurde gedrueckt

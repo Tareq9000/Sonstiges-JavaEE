@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+<meta charset="ISO-8859-1"/>
+<title>Rechner</title>
+<link href="style.css" rel="stylesheet"></link>
+</h:head>
+<h:body>
+	<h1>Rechner</h1>
+	
+	<h:form class="form">
+	
+	<h:inputText id="zahl1" required="true" value="#{rechner.zahl1}"></h:inputText>
+	<br></br>
+	<h:inputText id="zahl2" required="true" value="#{rechner.zahl2}"></h:inputText>
+	<br></br>
+	<h:inputText id="wert" required="true" value="#{rechner.wert}"></h:inputText>
+	<br></br>
+	<h:commandButton id="submit" value="submit" action="Rechner.xhtml"></h:commandButton>
+	<p></p>
+	<h:outputText value="${rechner.rechnen}" />
+	</h:form>
+	
+</h:body>
+</html>

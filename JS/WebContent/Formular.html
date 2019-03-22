@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link href="style.css" rel="stylesheet">
+<title>Formular</title>
+
+</head>
+<body>
+	<form class="form" name="form" method="get" action="test.html" onsubmit="return test()">
+		<h1>Registrierung</h1>
+		<p>
+			Vorname: <br><input type="text" class="textfield" name="vorname" >
+		<br>
+			Name: <br><input type="text" class="textfield" name="name" >
+		<br>
+			Mail: <br><input type="text" class="textfield" name="mail" >
+		<br>
+			Geburtsdatum:<br> <input type="date" class="textfield" name="datum" >
+		<br>
+			Passwort:<br> <input type="text" class="textfield" name="passwort" >
+		<br>
+			Passwort:<br> <input type="text" class="textfield" name="passwort2" >
+		<p>
+			<button class="button">Registrieren</button>
+		<p>
+	</form>
+	<script>
+		function test(){
+			var v = document.forms["form"]["vorname"].value;
+			var n = document.forms["form"]["name"].value;
+			var m = document.forms["form"]["mail"].value;
+			var d = document.forms["form"]["datum"].value;
+			var p = document.forms["form"]["passwort"].value;
+			var p2 = document.forms["form"]["passwort2"].value;
+			
+			if(v == "" || n == "" || m == "" || d == ""){
+				alert("Alle Felder müssen ausgefüllt werden!");
+				return false;
+				
+			}else if(p.length < 5 && p2.length < 5){
+				alert("Das Passwort ist zu klein!");
+				return false;
+				
+			}else if(p != p2){
+				alert("Die beiden Passwörter sind nicht gleich!");
+				return false;
+				
+			}else if(m.search("@") == -1 ||(m.search(".com") == -1 && m.search(".ch") == -1)){
+				alert("Keine gültige Mail!");
+				return false;
+				
+			}else{
+				return true;
+			}
+		}
+		
+		var x = document.forms["form"];
+		x.elements.vorname.placeholder = "dein Vorname";
+		x.elements.name.placeholder = "dein Name";
+		x.elements.mail.placeholder = "text@example.com";
+		x.elements.datum.placeholder = "dd.mm.yyyy";
+	</script>
+</body>
+</html>

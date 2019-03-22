@@ -1,0 +1,113 @@
+
+@charset "ISO-8859-1";
+
+.form{
+	border: 3px solid black;
+	text-align: center;
+	align-items: center;
+	background-size: cover;
+	font-size: 16px;
+	background: #495C70;
+	padding: 30px 30px 15px 30px;
+	border: 5px solid #53687E;
+}
+body{
+	text-align: center;
+	background-image: radial-gradient(circle, #007182, #005966, #004e59);
+	background-size: cover;
+
+}
+.form input[type=submit],
+.form input[type=button],
+.button,
+.form input[type=text],
+.form input[type=number],
+.form input[type=date],
+.form input[type=email],
+.form textarea,
+.form label
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #fff;
+
+}
+.form label {
+	display:none;
+	margin-bottom: 10px;
+}
+.form label > span{
+	display: inline-block;
+	float: center;
+	width: 150px;
+}
+.form input[type=text],
+.form input[type=number],
+.form input[type=date],
+.form input[type=email] 
+{
+	background: transparent;
+	border: none;
+	border-bottom: 1px dashed #83A4C5;
+	width: 275px;
+	outline: none;
+	padding: 0px 0px 0px 0px;
+	font-style: italic;
+}
+.form textarea{
+	font-style: italic;
+	padding: 0px 0px 0px 0px;
+	background: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 1px dashed #83A4C5;
+	width: 275px;
+	overflow: hidden;
+	resize:none;
+	height:20px;
+}
+
+.form textarea:focus, 
+.form input[type=text]:focus,
+.form input[type=number]:focus,
+.form input[type=date]:focus,
+.form input[type=email]:focus,
+.form input[type=email] :focus
+{
+	border-bottom: 1px dashed #D9FFA9;
+}
+
+.form input[type=submit],
+.button,
+.form input[type=button]{
+	background: #576E86;
+	border: none;
+	padding: 8px 10px 8px 10px;
+	border-radius: 5px;
+	color: #A8BACE;
+}
+.button:hover {
+	background-color: #576EAA;
+}
+.form input[type=submit]:hover,
+.button,
+.form input[type=button]:hover{
+background: #394D61;
+}
+.form input[type="radio"],
+.form input[type="checkbox"] {
+    background-color: #83A4C5;
+    border-radius: 10px;
+   
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+    -webkit-appearance: none;
+}
+table, tr, th, td{
+	border: 2px solid black;
+	width: 60%; margin-left: 20%; margin-right:20%;
+}
+
